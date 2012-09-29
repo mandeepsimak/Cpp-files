@@ -10,9 +10,9 @@ This script is to create basic files for simple program in C++.<br>
 After running this script, add your program code in files then execute<br>
 your code as follows:
 
-<b>Compilation<b>
+<b>Compilation<b><br>
 $ g++ -c program_name.cc main.cpp
 
-<b>Executing</b>
+<b>Executing</b><br>
 $ g++ main.o program_name.o -o program_name 
 
