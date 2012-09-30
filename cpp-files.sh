@@ -11,11 +11,17 @@ read program_name
 
 #check if directory already exists
 if [ -d $program_name ]; then
-echo "Error: Directory exists, Directory not created"
+    echo "Error: Directory exists, Directory not created"
+    echo "Enter another name of program"
+    read program_name
+    mkdir $program_name
 else
+    mkdir $program_name
+fi
 
-mkdir $program_name
+
 cd $program_name
+
 
 #----------------------------------------------------------------
 #                       Header file
@@ -61,4 +67,4 @@ echo "// File contains main function \n\n"\
      
 echo "\n"Your three basic files are created in $program_name.
 
-fi
+#fi
