@@ -9,6 +9,11 @@ echo "Generating basic files for your simple C++ program."
 echo "Enter the name of program"
 read program_name
 
+#check if directory already exists
+if [ -d $program_name ]; then
+echo "Error: Directory exists, Directory not created"
+else
+
 mkdir $program_name
 cd $program_name
 
@@ -56,3 +61,4 @@ echo "// File contains main function \n\n"\
      
 echo "\n"Your three basic files are created in $program_name.
 
+fi
